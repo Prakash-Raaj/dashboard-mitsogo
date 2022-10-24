@@ -2,8 +2,8 @@ import React from 'react';
 import thumbnail from '../assets/images/video thumbnail.png';
 
 const ProductVideo = ({ nav }) => {
-  const iconClass =
-    nav === false ? 'play-icon' : 'play-icon-nav-open';
+  // const iconClass =
+  //   nav === false ? 'play-icon' : 'play-icon-nav-open';
   return (
     <div className="video-page">
       <div className="our-users">

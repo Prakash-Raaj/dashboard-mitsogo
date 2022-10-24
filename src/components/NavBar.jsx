@@ -68,22 +68,6 @@ const NavBar = () => {
             </ul>
           );
         }
-        return (
-          <ul className="list-navbar" key={item.label}>
-            {}
-            <Link to={`/${item.label}`}>
-              <div className="list-item">
-                <div className={item.icon}></div>
-                <li className="nav_item">{item.label}</li>
-              </div>
-            </Link>
-            {item.label === 'Inbox' ? (
-              <span className="new-badge">New</span>
-            ) : (
-              ''
-            )}
-          </ul>
-        );
       })}
     </div>
   );
