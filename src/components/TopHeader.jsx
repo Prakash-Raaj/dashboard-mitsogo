@@ -20,8 +20,16 @@ const TopHeader = (props) => {
         navBar={props.nav}
         setNavBar={props.setNav}
       />
-      {notifications && <Notifications navBar={props.nav} />}
-      {profileDisplay && <MyAccount navBar={props.nav} />}
+      {notifications && (
+        <div className="notify-wrapper">
+          <Notifications navBar={props.nav} />
+        </div>
+      )}
+      {profileDisplay && (
+        <div className="my-account-wrapper">
+          <MyAccount navBar={props.nav} />
+        </div>
+      )}
     </div>
   );
 };
