@@ -7,10 +7,17 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f0f0f7;
-  min-height: 100vh;
-  width: 100%;
+  min-height: 1133px;
 }
 
+@media screen and (max-width: 490px) {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f0f7;
+    width: fit-content;
+    height: 2429px;
+  }
+}
 a {
   text-decoration: none;
   text-align: left;
@@ -171,8 +178,8 @@ a {
 
 .header-nav-open {
   position: absolute;
-  height: 100%;
-  width: calc(100% - 290px);
+  height: 1230px;
+  width: 1800px;
   left: 290px;
   background: #f5f7fb 0% 0% no-repeat padding-box;
   border-radius: 25px 0px 0px 0px;
@@ -275,7 +282,7 @@ a {
 
 @media screen and (max-width: 490px) {
   .header {
-    width: 395px;
+    width: 100%;
   }
   .header-nav-open {
     position: absolute;
@@ -540,14 +547,17 @@ a {
 .dashboard {
   width: 1800px;
   padding-top: 34px;
+  padding-bottom: 20px;
   padding-left: 40px;
+  transition: all 0.3s ease-out;
 }
 
 .dash-nav-open {
-  width: calc(100% - 300px);
+  /* width: calc(100% - 300px); */
   position: absolute;
   left: 315px;
   top: 76px;
+  transition: all 0.3s ease-out;
 }
 .overview-class {
   display: flex;
@@ -621,6 +631,7 @@ a {
     color: #43425d;
     opacity: 1;
     margin-bottom: 0;
+    margin-top: 0px;
   }
   .btn-funds {
     width: 146px;
